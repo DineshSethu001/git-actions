@@ -1,19 +1,19 @@
----
 name: My First GitHub Actions
 on:
-  - push
+  push:
 jobs:
-    print-hello-world:
-        runs-on: ubuntu-latest
-        steps:
-            -name: step1
-             run: echo "hello world!!!!!!!"
-            -name: step2
-             run: echo "this is step number 2"
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "hello world!!!!!!!"
+      - name: Step 2
+        run: echo "this is step number 2"
 
-    print-hello-world2:
-        runs-on: ubuntu-latest
-        steps:
-            
-            -name: step2
-             run: echo "this is step number 2"
+  print-hello-world2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "hello world!!!!!!!"
+      - name: Step 2
+        run: echo "this is step number 2"
